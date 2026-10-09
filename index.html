@@ -297,6 +297,13 @@
     background:linear-gradient(0deg,rgba(11,18,32,.94),rgba(11,18,32,.35) 65%,transparent);
     font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:500;font-size:16px;color:var(--paper)}
 
+  .render-feature{position:relative;border:1px solid var(--line);border-radius:16px;overflow:hidden;aspect-ratio:16/9;margin-top:34px;background:var(--ink-2)}
+  .render-feature img{width:100%;height:100%;object-fit:cover;display:block}
+  .render-feature figcaption,.renders figcaption{position:absolute;left:0;right:0;bottom:0;padding:38px 20px 14px;
+    background:linear-gradient(0deg,rgba(11,18,32,.95),rgba(11,18,32,.35) 65%,transparent);
+    font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:500;font-size:17px;color:var(--paper)}
+  .renders{margin-top:16px}
+
   /* ————— two signatures ————— */
   .sig-pair{display:inline-flex;gap:64px;flex-wrap:wrap;justify-content:center;padding-top:32px;border-top:1px solid var(--line);margin-top:6px}
   .sig2{display:flex;flex-direction:column;align-items:center;gap:4px}
@@ -336,7 +343,7 @@
       <div class="hero-rule"></div>
       <span class="eyebrow">Veteran EDGE Conference — Renaissance Dallas Hotel · March 8–13, 2027</span>
       <h1>A tenth anniversary<br><em>that looks like one.</em></h1>
-      <p class="hero-lede">A custom Formset backdrop carrying the IVMF logo, a lighting rig that stands entirely on the floor so no hotel rigging is needed, two-camera IMAG with the whole program recorded, and breakout rooms ready for every session. Built to sit cleanly alongside ENCORE, with Brian Fisher on site as your project lead from load-in to strike.</p>
+      <p class="hero-lede">A custom Formset backdrop carrying the IVMF logo, two 16' × 9' screens fed by two-camera IMAG, the whole program recorded, and breakout rooms ready for every session. Brian Fisher is on site as your project lead from load-in to strike.</p>
     </div>
   </div>
 
@@ -350,22 +357,43 @@
   </div>
 </header>
 
+<!-- ═══ THE DESIGN ═══ -->
+<section id="design">
+  <div class="wrap">
+    <span class="eyebrow sec-eyebrow reveal">The design</span>
+    <h2 class="sec-title reveal">The room, as designed.</h2>
+    <p class="sec-intro reveal" style="max-width:74ch">We built the General Session in our 3D design suite so you can see the room rather than picture it from a gear list. Four views from the suite, and one photorealistic AI mockup of IMAG in use.</p>
+
+    <figure class="render-feature reveal">
+      <img src="img/design-front.webp" width="1672" height="941" alt="Render of Salon D and E from the front: the Formset backdrop with the IVMF logo at center, a projection screen on either side, red uplighting on the walls">
+      <figcaption>Front-on: the Formset backdrop at center, a 16' × 9' screen either side</figcaption>
+    </figure>
+
+    <div class="renders reveal">
+      <figure><img src="img/design-imag-mockup.webp" width="1672" height="941" loading="lazy" alt="Photorealistic AI mockup of the room set with dressed rounds, a speaker at the podium shown live on both side screens"><figcaption>IMAG in use: a photorealistic AI mockup</figcaption></figure>
+      <figure><img src="img/design-room-wide.webp" width="1672" height="941" loading="lazy" alt="Wide render of the full ballroom with both screens, the backdrop and uplighting along both walls"><figcaption>The full room, uplit along both walls</figcaption></figure>
+      <figure><img src="img/design-stage-close.webp" width="1672" height="941" loading="lazy" alt="Close render of the stage: Formset tile backdrop with the IVMF logo, clear acrylic podium and two floor wedges"><figcaption>The stage: backdrop, acrylic podium and floor wedges</figcaption></figure>
+      <figure><img src="img/design-backstage.webp" width="1672" height="941" loading="lazy" alt="Backstage render from behind the stage-left screen, looking past the presenter to the room"><figcaption>Backstage, behind the stage-left screen</figcaption></figure>
+    </div>
+  </div>
+</section>
+
 <!-- ═══ POSITIONING ═══ -->
 <section id="positioning">
   <div class="wrap">
-    <span class="eyebrow sec-eyebrow reveal">Why an outside vendor works here</span>
-    <p class="lead-statement reveal">Everything in this package is built to sit <b>cleanly alongside ENCORE.</b></p>
+    <span class="eyebrow sec-eyebrow reveal">What the design is doing</span>
+    <p class="lead-statement reveal">Designed for the room, <b>and for the camera.</b></p>
 
     <div class="promise-row reveal">
       <div class="promise-col">
-        <span class="kk">Working inside the hotel's arrangement</span>
-        <h3>We stay in our lane, on purpose</h3>
-        <p>Your hotel contract gives ENCORE exclusive rights to rigging, electrical, IT and sound patching, and we have built the whole package around that rather than against it. The General Session lighting stands on ground-supported truss towers with bolt bases and ballast, so there is no rigging call and no rigging bill. On our call we talked about hotel rigging alone running $10–15K. We bring our own PA, mixers and wireless, so nothing patches into the house system. Every Astera fixture runs on battery and never touches house power. The one thing we take from ENCORE is a power tie-in, which our own distro picks up from there.</p>
+        <span class="kk">A look built for the tenth year</span>
+        <h3>Readable from the back row</h3>
+        <p>The Formset backdrop carries the IVMF mark at center and gives the anniversary a look of its own on stage. A 16' × 9' screen sits either side, set up for rear projection so the projectors live behind the screens and out of every sightline. Two Sony broadcast cameras feed those screens, so a guest at a back table sees the speaker as clearly as one up front. Uplighting runs the length of both walls. All of it stands on ground-supported truss, which on our call we figured keeps $10–15K of hotel rigging off your bill.</p>
       </div>
       <div class="promise-col">
         <span class="kk">One lead, there for all of it</span>
         <h3>Brian is on site from Monday to Saturday</h3>
-        <p>Brian Fisher is your named project lead. He scoped this event with Kathryn on October 5 and he is on site from Monday's load-in through Saturday's strike. He brings our lead technicians from Austin and we hire local crew for stagehand roles, which keeps travel cost down without putting unfamiliar people on the systems that matter. You and the IVMF AV/IT team get one person who knows every room, every cue and every ENCORE handoff, instead of a different contact for each department.</p>
+        <p>Brian Fisher is your named project lead. He scoped this event with Kathryn on October 5 and he is on site from Monday's load-in through Saturday's strike. He brings our lead technicians from Austin and we hire local crew for stagehand roles, which keeps travel cost down without putting unfamiliar people on the systems that matter. You and the IVMF AV/IT team get one person who knows every room, every cue and every hotel handoff, instead of a different contact for each department.</p>
       </div>
     </div>
 
@@ -378,7 +406,6 @@
     </div>
   </div>
 </section>
-<!-- RENDERS_SLOT -->
 
 <!-- ═══ §4.2 SCOPE ═══ -->
 <section id="scope">
@@ -432,7 +459,7 @@
             <div class="spec-col">
               <div class="h">Video &amp; IMAG</div>
               <ul>
-                <li>(2) 16' × 9' Franklin screens with dress</li>
+                <li>(2) 16' × 9' Franklin screens with dress, set for rear projection</li>
                 <li>(2) Epson 13,000-lumen laser projectors on short-throw lenses</li>
                 <li>(2) Sony HXC-FB75 broadcast cameras: a Fujinon 20× for the wide, a 36× for the tight</li>
                 <li>Blackmagic ATEM HD8 ISO switcher recording every source</li>
@@ -453,7 +480,7 @@
               </ul>
             </div>
           </div>
-          <div class="room-crew"><b>Why the backdrop matters —</b> the Formset wall gives the tenth anniversary its own look, separate from the Syracuse University brand, which is what we heard you wanted on the call. It reads well in the room and it reads well on camera, which matters because both cameras are pointed at it all day.</div>
+          <div class="room-crew"><b>Why the backdrop matters —</b> the Formset wall gives the tenth anniversary a look of its own, with the IVMF mark at center. It reads well in the room and it reads well on camera, which matters because both cameras are pointed at it all day.</div>
         </div>
       </div>
 
@@ -561,36 +588,6 @@
   </div>
 </section>
 
-<!-- ═══ §4.7 ENCORE COORDINATION ═══ -->
-<section id="encore">
-  <div class="wrap">
-    <span class="eyebrow sec-eyebrow reveal">RFP §4 · Insurance &amp; coordination plan</span>
-    <h2 class="sec-title reveal">Who does what, with ENCORE.</h2>
-    <p class="sec-intro reveal" style="margin-bottom:10px;max-width:74ch">Section 2 asks every outside vendor to flag what we deliver on our own and what falls to ENCORE. This is that list, area by area. The short version: we need ENCORE for power, for internet if you stream, and for the required house technician. We don't need them for anything else.</p>
-
-    <div class="reveal">
-    <table class="ctab map">
-      <thead><tr><th>Area</th><th>Who</th><th>How it works</th></tr></thead>
-      <tbody>
-        <tr><td><b>Rigging</b></td><td><span class="bdg no">Not needed</span></td><td>Every truss tower and fixture is ground-supported on bolt bases and ballast. Nothing hangs from the ceiling, so ENCORE never has to make a rigging call.</td></tr>
-        <tr><td><b>Electrical</b></td><td><span class="bdg enc">ENCORE, then us</span></td><td>ENCORE provides the power tie-in. Our Lex Pagoda Socapex distro picks it up on camlock and handles everything downstream. We send a power plot in advance so the drop lands where it's needed.</td></tr>
-        <tr><td><b>Sound</b></td><td><span class="bdg us">Limitless</span></td><td>Our own PA, mixers and wireless in every room. Nothing patches into the house sound system.</td></tr>
-        <tr><td><b>IT &amp; internet</b></td><td><span class="bdg enc">ENCORE</span></td><td>Only needed if you livestream. Recording is local to our switcher and needs no internet at all.</td></tr>
-        <tr><td><b>Specialty lighting</b></td><td><span class="bdg us">Limitless</span></td><td>All 24 Astera AX5s, in the General Session and Salon B, run on battery and never draw house power.</td></tr>
-        <tr><td><b>Cameras &amp; IMAG</b></td><td><span class="bdg us">Limitless</span></td><td>Our own Sony broadcast cameras, CCUs and switcher. Nothing from the house system.</td></tr>
-        <tr><td><b>Staging &amp; scenic</b></td><td><span class="bdg us">Limitless</span></td><td>The Formset backdrop and drape are ours to build and strike.</td></tr>
-        <tr><td><b>House technician</b></td><td><span class="bdg enc">ENCORE</span></td><td>Required on every install and strike day under the hotel's outside-vendor policy. Estimated in our pricing below.</td></tr>
-      </tbody>
-    </table>
-    </div>
-
-    <div class="cont reveal">
-      <div class="rt">being straight about the trade-off</div>
-      <h3>The 20% hotel discount</h3>
-      <p>Your RFP notes that the hotel's 20% discount on 2027 AV pricing only applies if ENCORE is the sole provider. That is a real number and we are not going to pretend it isn't. What sits on the other side of it is a lighting rig that needs <b>no hotel rigging at all</b>, a backdrop and a look built specifically for your tenth anniversary, and a lead who has been on this event since the first call. Brian will be the single point of contact for ENCORE on site, and we will advance every handoff with the Hotel Event Manager before load-in.</p>
-    </div>
-  </div>
-</section>
 
 <!-- ═══ §4.3 STAFFING ═══ -->
 <section id="staffing">
@@ -702,6 +699,28 @@
   </div>
 </section>
 
+<!-- ═══ §4.7 COORDINATION ═══ -->
+<section id="encore">
+  <div class="wrap">
+    <span class="eyebrow sec-eyebrow reveal">RFP §4 · Insurance &amp; coordination plan</span>
+    <h2 class="sec-title reveal">Coordinating with the hotel.</h2>
+    <p class="sec-intro reveal" style="margin-bottom:10px;max-width:74ch">Section 2 asks outside vendors to flag what they deliver themselves and what falls under ENCORE's scope. We need ENCORE for the power tie-in, for internet if you stream, and for the required house technician. Everything else on this page is ours.</p>
+
+    <div class="reveal">
+    <table class="ctab map">
+      <thead><tr><th>Area</th><th>Who</th><th>How it works</th></tr></thead>
+      <tbody>
+        <tr><td><b>Sound, lighting, video &amp; scenic</b></td><td><span class="bdg us">Limitless</span></td><td>Our own equipment throughout. Nothing patches into the house sound system, and the Astera fixtures run on battery, so they never draw house power.</td></tr>
+        <tr><td><b>Rigging</b></td><td><span class="bdg no">Not needed</span></td><td>Everything is ground-supported on bolt bases and ballast. Nothing hangs from the ceiling.</td></tr>
+        <tr><td><b>Electrical</b></td><td><span class="bdg enc">ENCORE, then us</span></td><td>ENCORE provides the tie-in and our Socapex distro handles everything downstream. We'll send a power plot in advance.</td></tr>
+        <tr><td><b>IT &amp; internet</b></td><td><span class="bdg enc">ENCORE</span></td><td>Only needed if you livestream. Recording is local to our switcher.</td></tr>
+        <tr><td><b>House technician</b></td><td><span class="bdg enc">ENCORE</span></td><td>Required on install and strike days. Estimated in the pricing above.</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</section>
+
 <!-- ═══ §4.1 COMPANY ═══ -->
 <section id="company">
   <div class="wrap">
@@ -713,7 +732,7 @@
       <div class="req">
         <div class="rt">on-site project lead</div>
         <h3>Brian Fisher</h3>
-        <p>Account manager for Veteran EDGE. Brian scoped this event with Kathryn on October 5 and is <b>on site from load-in through strike</b>, as the single point of contact for IVMF, the Hotel Event Manager and ENCORE.</p>
+        <p>Account manager for Veteran EDGE. Brian scoped this event with Kathryn on October 5 and is <b>on site from load-in through strike</b>, as the single point of contact for IVMF and the hotel.</p>
       </div>
       <div class="req">
         <div class="rt">founder &amp; owner</div>
@@ -793,7 +812,7 @@
 <section class="close">
   <div class="wrap">
     <h2 class="reveal">Thank you for <em>including us.</em></h2>
-    <p class="reveal">Kathryn, we'd be proud to produce the tenth Veteran EDGE. If anything here needs reworking, whether it's the LED upgrade, the breakout layout or how we split the work with ENCORE, tell either of us and we'll turn it around quickly.</p>
+    <p class="reveal">Kathryn, we'd be proud to produce the tenth Veteran EDGE. If anything here needs reworking, whether it's the LED upgrade, the breakout layout or anything in the design, tell either of us and we'll turn it around quickly.</p>
     <div class="sig-pair reveal">
       <div class="sig2">
         <div class="nm">Brian Fisher</div>
