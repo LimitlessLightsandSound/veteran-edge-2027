@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Limitless × IVMF — Veteran EDGE Conference 2027 // Renaissance Dallas</title>
+<meta name="description" content="Audio-visual production proposal for the Veteran EDGE Conference 2027 at the Renaissance Dallas Hotel, March 8–13, 2027. Quotation 1721 from Limitless Lights + Sound.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Archivo:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0b1220;
+    --ink-2:#111a2c;
+    --slate:#17223a;
+    --gold:#d8b46a;
+    --gold-2:#b8954f;
+    --steel:#93a7c2;
+    --steel-2:#7084a0;
+    --ivory:#f1f3f6;
+    --paper:#ccd4df;
+    --mute:#8592a6;
+    --line:rgba(216,180,106,.18);
+    --line-soft:rgba(216,180,106,.09);
+    --line-steel:rgba(147,167,194,.20);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--ink);color:var(--paper);
+    font-family:'Archivo',sans-serif;font-weight:300;line-height:1.7;
+    -webkit-font-smoothing:antialiased;overflow-x:hidden;
+  }
+
+  .glow{position:fixed;inset:0;z-index:0;pointer-events:none;
+    background:
+      radial-gradient(52vw 52vh at 84% 2%, rgba(216,180,106,.12), transparent 62%),
+      radial-gradient(46vw 42vh at 6% 34%, rgba(147,167,194,.07), transparent 58%),
+      radial-gradient(58vw 52vh at 50% 106%, rgba(216,180,106,.075), transparent 60%);}
+  .grain{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.03;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
+
+  .wrap{position:relative;z-index:2;max-width:1040px;margin:0 auto;padding:0 36px}
+
+  .eyebrow{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:500;
+    font-size:19px;letter-spacing:.02em;color:var(--gold);}
+  h1,h2,h3,.display{font-family:'Bebas Neue',sans-serif;font-weight:400;color:var(--ivory);line-height:1;letter-spacing:.015em}
+  .serif{font-family:'Cormorant Garamond',serif}
+
+  /* ————— HERO ————— */
+  /* OPTION A (default): no photography. */
+  .hero{position:relative;overflow:hidden;min-height:96vh;display:flex;flex-direction:column;justify-content:space-between;padding:44px 0 56px}
+  .hero-bg{position:absolute;inset:0;z-index:0;
+    background:
+      radial-gradient(72vw 70vh at 80% -10%, rgba(216,180,106,.20), transparent 60%),
+      radial-gradient(58vw 58vh at 10% 44%, rgba(147,167,194,.085), transparent 58%),
+      radial-gradient(84vw 46vh at 50% 110%, rgba(216,180,106,.11), transparent 60%),
+      linear-gradient(172deg, #0f1830 0%, var(--ink) 55%, #070b14 100%);}
+  .hero-bg::before{content:'';position:absolute;inset:0;
+    background-image:linear-gradient(rgba(216,180,106,.05) 1px, transparent 1px);
+    background-size:100% 92px;
+    -webkit-mask-image:radial-gradient(72% 62% at 52% 40%, #000 10%, transparent 76%);
+    mask-image:radial-gradient(72% 62% at 52% 40%, #000 10%, transparent 76%);}
+  .hero-bg::after{content:'';position:absolute;inset:0;
+    background:linear-gradient(180deg, transparent 62%, rgba(11,18,32,.7) 84%, var(--ink) 100%);}
+
+  /* --- OPTION B: with a hero photograph. Swap for the three .hero-bg rules above.
+  .hero-bg{position:absolute;inset:0;z-index:0;
+    background:
+      linear-gradient(180deg, rgba(11,18,32,.54) 0%, rgba(11,18,32,.66) 42%, rgba(11,18,32,.9) 80%, var(--ink) 100%),
+      radial-gradient(58vw 58vh at 82% 6%, rgba(216,180,106,.16), transparent 60%),
+      url('img/hero.jpg') center 48%/cover no-repeat;}
+  .hero-bg::after{content:'';position:absolute;inset:0;
+    box-shadow:inset 0 -130px 120px -40px var(--ink), inset 0 100px 90px -50px rgba(11,18,32,.65)}
+  --- */
+
+  .topbar{display:flex;justify-content:space-between;align-items:flex-start;gap:20px}
+  .logo{font-family:'Bebas Neue';font-size:27px;letter-spacing:.17em;color:var(--ivory)}
+  .logo img{display:block;width:150px;height:auto}
+  .logo:hover{opacity:.88;transition:opacity .4s}
+  .logo small{display:block;font-family:'Cormorant Garamond';font-style:italic;font-size:13px;letter-spacing:.06em;color:var(--steel-2);margin-top:2px}
+  .forwhom{text-align:right;font-family:'Cormorant Garamond',serif;font-size:17.5px;color:var(--steel-2);line-height:1.7;font-style:italic;font-weight:500}
+  .forwhom b{color:var(--gold);font-weight:600;font-style:normal;display:block;font-family:'Archivo';font-size:13px;letter-spacing:.02em;margin:2px 0 1px}
+
+  .hero-mid{max-width:900px}
+  .hero-rule{width:58px;height:1px;background:linear-gradient(90deg,var(--gold),transparent);margin-bottom:26px}
+  .hero .eyebrow{display:block;margin-bottom:24px}
+  .hero h1{font-size:clamp(50px,8.6vw,112px);text-shadow:0 0 90px rgba(216,180,106,.22)}
+  .hero h1 em{font-style:normal;color:var(--gold);display:block}
+  .hero-lede{font-size:clamp(16px,1.9vw,20px);color:var(--paper);max-width:56ch;margin-top:28px;line-height:1.72}
+  .hero-foot{display:flex;flex-wrap:wrap;gap:40px;margin-top:6px}
+  .hf .k{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16.5px;color:var(--steel-2);margin-bottom:2px;font-weight:500}
+  .hf .v{font-family:'Archivo';font-size:15px;font-weight:400;color:var(--ivory)}
+
+  /* ————— sections ————— */
+  section{padding:66px 0}
+  .sec-eyebrow{display:block;margin-bottom:16px}
+  .sec-title{font-size:clamp(34px,5vw,60px);max-width:19ch;margin-bottom:20px;text-shadow:0 0 60px rgba(216,180,106,.13)}
+  .sec-intro{font-size:17px;color:var(--paper);max-width:62ch;line-height:1.7}
+
+  /* ————— POSITIONING ————— */
+  .lead-statement{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(27px,3.7vw,46px);line-height:1.28;color:var(--ivory);max-width:23ch}
+  .lead-statement b{font-weight:600;color:var(--gold);font-style:italic}
+  .promise-row{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:48px}
+  .promise-col .kk{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;color:var(--gold);margin-bottom:12px;display:block}
+  .promise-col h3{font-family:'Bebas Neue';font-size:29px;color:var(--ivory);margin-bottom:12px;letter-spacing:.04em}
+  .promise-col p{font-size:15.5px;color:var(--paper);line-height:1.72}
+
+  /* ————— ROOM CARDS ————— */
+  .rooms{display:flex;flex-direction:column;gap:18px}
+  .room{position:relative;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:linear-gradient(180deg,var(--ink-2),var(--ink));transition:border-color .6s,transform .6s}
+  .room:hover{border-color:rgba(216,180,106,.32);transform:translateY(-2px)}
+  .room-media{position:relative;min-height:260px;overflow:hidden}
+  .room-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.3s ease}
+  .room:hover .room-media img{transform:scale(1.04)}
+  .room-media::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(17,26,44,.24),rgba(17,26,44,.55) 55%,var(--ink-2) 99%)}
+  .room-inner{position:relative;z-index:1;padding:38px 42px}
+  .room-head{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;flex-wrap:wrap;padding-bottom:20px;border-bottom:1px solid var(--line-soft)}
+  .room-num{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16px;color:var(--steel);opacity:.8;margin-bottom:6px;font-weight:500}
+  .room-label{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;color:var(--gold);margin-bottom:4px}
+  .room h3{font-family:'Bebas Neue';font-size:clamp(29px,4vw,40px);color:var(--ivory);letter-spacing:.03em}
+  .room-price{text-align:right;flex-shrink:0}
+  .room-price .amt{font-family:'Bebas Neue';font-size:31px;color:var(--gold);letter-spacing:.02em;line-height:1.1}
+  .room-price .cap{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;color:var(--steel-2);font-weight:500}
+
+  .room-meta{display:flex;flex-wrap:wrap;gap:10px 34px;padding:18px 0 4px}
+  .rm{font-size:13.5px;color:var(--paper)}
+  .rm span{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15.5px;color:var(--steel-2);margin-right:7px;font-weight:500}
+
+  .spec{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:26px 34px;margin-top:20px;padding-top:22px;border-top:1px solid var(--line-soft)}
+  .spec-col .h{font-family:'Archivo';font-size:11.5px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--gold);margin-bottom:11px}
+  .spec-col ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+  .spec-col li{font-size:14px;color:var(--paper);line-height:1.5;padding-left:15px;position:relative}
+  .spec-col li::before{content:'—';position:absolute;left:0;top:0;color:var(--gold);opacity:.55}
+
+  .room-crew{margin-top:22px;padding-top:18px;border-top:1px solid var(--line-soft);font-size:14px;color:var(--paper)}
+  .room-crew b{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:500;font-size:16.5px;color:var(--gold)}
+
+  .addon{margin-top:16px;padding:18px 22px;border-radius:12px;background:linear-gradient(120deg,rgba(147,167,194,.07),rgba(17,26,44,.6));border:1px solid var(--line-steel)}
+  .addon .at{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;color:var(--steel);margin-bottom:6px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  .addon .at b{font-family:'Bebas Neue';font-style:normal;font-size:22px;color:var(--gold);letter-spacing:.02em}
+  .addon p{font-size:14px;color:var(--paper);line-height:1.6}
+
+  /* ————— BACKBONE ————— */
+  .incl{display:grid;grid-template-columns:repeat(2,1fr);gap:36px}
+  .incl-card .h{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:23px;color:var(--gold);margin-bottom:6px}
+  .incl-card .sub{font-family:'Archivo';font-size:12px;font-weight:400;letter-spacing:.02em;color:var(--steel-2);margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--line-soft)}
+  .incl-card ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+  .incl-card li{font-size:14.5px;color:var(--paper);line-height:1.5;padding-left:16px;position:relative}
+  .incl-card li::before{content:'—';position:absolute;left:0;top:0;color:var(--gold);opacity:.6}
+
+  /* ————— STATS STRIP ————— */
+  .stats{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;margin-top:48px;padding:34px 0;
+    border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .stat{text-align:center}
+  .stat .n{font-family:'Bebas Neue';font-size:clamp(34px,4.6vw,50px);color:var(--gold);line-height:1;letter-spacing:.02em;text-shadow:0 0 50px rgba(216,180,106,.25)}
+  .stat .l{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16px;color:var(--steel-2);margin-top:8px;line-height:1.4;font-weight:500}
+
+
+  /* ————— GALLERY (only if using photography) ————— */
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:46px}
+  .gallery figure{position:relative;border:1px solid var(--line);border-radius:14px;overflow:hidden;aspect-ratio:4/3}
+  .gallery img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.2s ease}
+  .gallery figure:hover img{transform:scale(1.05)}
+  .gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:30px 18px 13px;
+    background:linear-gradient(0deg,rgba(11,18,32,.94),rgba(11,18,32,.4) 60%,transparent);
+    font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;color:var(--paper)}
+
+  /* ————— TIMELINE ————— */
+  .timeline{margin-top:10px}
+  .tl-row{display:grid;grid-template-columns:190px 1fr;gap:32px;padding:22px 0;border-bottom:1px solid var(--line-soft);align-items:baseline}
+  .tl-row:last-child{border-bottom:none}
+  .tl-when .date{font-family:'Bebas Neue';font-size:25px;color:var(--gold);letter-spacing:.04em;line-height:1.05}
+  .tl-when .day{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16.5px;color:var(--steel-2);font-weight:500}
+  .tl-what h3{font-family:'Archivo';font-size:17px;font-weight:600;color:var(--ivory);margin-bottom:4px;display:inline-block}
+  .tl-what .star{color:var(--gold);margin-left:8px;font-size:15px}
+  .tl-what p{font-size:14.5px;color:var(--paper);line-height:1.6;max-width:60ch}
+
+  /* ————— VENUE REQS ————— */
+  .reqs{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  .req{padding:26px 28px;border:1px solid var(--line-steel);border-radius:14px;background:linear-gradient(150deg,rgba(147,167,194,.05),rgba(17,26,44,.5))}
+  .req .rt{font-family:'Archivo';font-size:11.5px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--steel);margin-bottom:9px}
+  .req h3{font-family:'Bebas Neue';font-size:25px;color:var(--ivory);letter-spacing:.04em;margin-bottom:9px}
+  .req p{font-size:14.5px;color:var(--paper);line-height:1.65}
+  .req b{color:var(--gold);font-weight:600}
+
+  /* ————— INVESTMENT ————— */
+  .invest{background:linear-gradient(150deg,var(--slate),var(--ink-2));border:1px solid var(--line);border-radius:18px;padding:52px 52px;position:relative;overflow:hidden}
+  .invest::after{content:'';position:absolute;top:-30%;left:76%;transform:translateX(-50%);width:70%;height:160%;background:radial-gradient(closest-side,rgba(216,180,106,.14),transparent);pointer-events:none}
+  .inv-in{position:relative;z-index:1}
+  .inv-label{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:20px;color:var(--gold);margin-bottom:6px;text-align:center}
+  .inv-sub{text-align:center;font-size:13.5px;color:var(--steel-2);margin-bottom:22px}
+  .inv-figure{font-family:'Bebas Neue';font-size:clamp(54px,9.4vw,112px);color:var(--gold);line-height:.9;letter-spacing:.01em;text-shadow:0 0 70px rgba(216,180,106,.32);text-align:center}
+  .inv-figure span{font-size:.42em;vertical-align:baseline}
+  .inv-figcap{text-align:center;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17.5px;color:var(--paper);margin-top:12px;font-weight:500}
+
+  .inv-lines{max-width:600px;margin:34px auto 0;border-top:1px solid var(--line-soft)}
+  .inv-line{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding:14px 2px;border-bottom:1px solid var(--line-soft);font-size:15px}
+  .inv-line .lab{color:var(--paper)}
+  .inv-line .lab small{display:block;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;color:var(--steel-2);margin-top:2px;font-weight:500}
+  .inv-line .val{font-family:'Archivo';font-weight:400;color:var(--ivory);white-space:nowrap}
+  .inv-line.sub-line .lab{padding-left:16px;font-size:14px;color:var(--mute)}
+  .inv-line.sub-line .val{font-size:14px;color:var(--paper)}
+  .inv-line.tax .val{color:var(--gold)}
+  .inv-line.total{border-bottom:none;padding-top:18px}
+  .inv-line.total .lab{font-family:'Bebas Neue';font-size:22px;letter-spacing:.04em;color:var(--ivory)}
+  .inv-line.total .val{font-family:'Bebas Neue';font-size:26px;letter-spacing:.03em;color:var(--ivory)}
+  .inv-head{font-family:'Archivo';font-size:11.5px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--gold);padding:24px 2px 8px;border-bottom:1px solid var(--line-soft)}
+
+  .saved{margin-top:26px;padding:24px 28px;border-radius:14px;background:linear-gradient(120deg,rgba(147,167,194,.08),rgba(17,26,44,.6));border:1px solid var(--line-steel)}
+  .saved .et{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:19px;color:var(--steel);margin-bottom:8px}
+  .saved p{font-size:14.5px;color:var(--paper);line-height:1.66;max-width:68ch}
+  .saved b{color:var(--gold);font-weight:600}
+  .inv-note{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15.5px;color:var(--steel-2);margin-top:22px;text-align:center;line-height:1.6;font-weight:500}
+
+  /* ————— GOOD TO KNOW ————— */
+  .gtk{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+  .gtk-item .lead{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;color:var(--gold);display:block;margin-bottom:6px;font-weight:500}
+  .gtk-item h3{font-family:'Bebas Neue';font-size:23px;color:var(--ivory);letter-spacing:.04em;margin-bottom:8px}
+  .gtk-item p{font-size:14.5px;color:var(--paper);line-height:1.64}
+
+  /* ————— CLOSE ————— */
+  .close{text-align:center;padding:88px 0 64px}
+  .close h2{font-size:clamp(36px,5.8vw,74px);max-width:18ch;margin:0 auto;text-shadow:0 0 70px rgba(216,180,106,.18)}
+  .close h2 em{font-style:normal;color:var(--gold)}
+  .close p{font-size:17px;color:var(--steel-2);max-width:54ch;margin:22px auto 38px;line-height:1.7}
+  .sig{display:inline-flex;flex-direction:column;align-items:center;gap:4px;padding-top:32px;border-top:1px solid var(--line);margin-top:6px}
+  .sig .nm{font-family:'Bebas Neue';font-size:28px;color:var(--ivory);letter-spacing:.08em}
+  .sig .rl{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17.5px;color:var(--gold);font-weight:500}
+  .sig .ct{font-family:'Archivo';font-size:13px;color:var(--steel-2);margin-top:9px;font-weight:300}
+
+  footer{border-top:1px solid var(--line-soft);padding:26px 0}
+  .foot-in{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15.5px;color:var(--steel-2);font-weight:500}
+
+  .reveal{opacity:0;transform:translateY(20px);transition:opacity 1s cubic-bezier(.2,.6,.2,1),transform 1s cubic-bezier(.2,.6,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+
+  @media (max-width:800px){
+    .wrap{padding:0 22px}
+    .logo img{width:112px}
+    .promise-row{grid-template-columns:1fr;gap:32px}
+    .room-inner{padding:28px 24px}
+    .room-media{min-height:190px}
+    .room-head{flex-direction:column;gap:14px}
+    .room-price{text-align:left}
+    .spec{grid-template-columns:1fr;gap:22px}
+    .incl{grid-template-columns:1fr;gap:30px}
+    .reqs{grid-template-columns:1fr}
+    .stats{grid-template-columns:repeat(2,1fr);gap:28px 18px;padding:28px 0}
+    .gallery{grid-template-columns:1fr;gap:12px}
+    .gtk{grid-template-columns:1fr;gap:24px}
+    .hero-foot{gap:22px}
+    .invest{padding:36px 22px}
+    .tl-row{grid-template-columns:1fr;gap:8px;padding:18px 0}
+    .tl-when{display:flex;align-items:baseline;gap:12px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .reveal{opacity:1;transform:none;transition:none}
+    html{scroll-behavior:auto}
+    .room:hover{transform:none}
+  }
+  /* ————— TABLES (crew, pricing, scope map) ————— */
+  .ctab{width:100%;border-collapse:collapse;margin-top:10px;font-size:14px}
+  .ctab caption{caption-side:top;text-align:left;font-family:'Cormorant Garamond',serif;font-style:italic;
+    font-weight:500;font-size:18px;color:var(--steel);padding:22px 0 10px}
+  .ctab th{font-family:'Archivo';font-size:10.5px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;
+    color:var(--gold);text-align:left;padding:0 12px 9px 0;border-bottom:1px solid var(--line)}
+  .ctab th.r,.ctab td.r{text-align:right;padding-right:0}
+  .ctab td{padding:11px 12px 11px 0;border-bottom:1px solid var(--line-soft);color:var(--paper);vertical-align:top;line-height:1.55}
+  .ctab tr:last-child td{border-bottom:none}
+  .ctab td.q{color:var(--ivory);font-variant-numeric:tabular-nums;white-space:nowrap}
+  .ctab td b{color:var(--ivory);font-weight:500}
+  .ctab tfoot td{border-top:1px solid var(--line);border-bottom:none;padding-top:14px;font-weight:600;color:var(--ivory)}
+
+  /* ————— status badges ————— */
+  .bdg{display:inline-block;font-family:'Archivo';font-size:10px;font-weight:600;letter-spacing:.12em;
+    text-transform:uppercase;padding:4px 10px;border-radius:20px;white-space:nowrap}
+  .bdg.us{color:var(--gold);border:1px solid var(--line)}
+  .bdg.enc{color:var(--steel);border:1px solid var(--line-steel)}
+  .bdg.no{color:var(--mute);border:1px solid rgba(133,146,166,.25)}
+
+  /* ————— callout panel ————— */
+  .cont{border:1px solid var(--line-steel);border-radius:16px;padding:30px 32px;margin-top:22px;
+    background:linear-gradient(150deg,rgba(147,167,194,.075),rgba(17,26,44,.7))}
+  .cont .rt{font-family:'Archivo';font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--steel);margin-bottom:10px}
+  .cont h3{font-family:'Bebas Neue';font-size:27px;color:var(--ivory);letter-spacing:.03em;margin-bottom:12px}
+  .cont p{font-size:15px;color:var(--paper);line-height:1.68;max-width:74ch}
+  .cont b{color:var(--gold);font-weight:600}
+
+  /* ————— render grid (4-up) ————— */
+  .renders{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:34px}
+  .renders figure{position:relative;border:1px solid var(--line);border-radius:14px;overflow:hidden;aspect-ratio:16/9;background:var(--ink-2)}
+  .renders img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.2s ease}
+  .renders figure:hover img{transform:scale(1.03)}
+  .renders figcaption{position:absolute;left:0;right:0;bottom:0;padding:34px 18px 13px;
+    background:linear-gradient(0deg,rgba(11,18,32,.94),rgba(11,18,32,.35) 65%,transparent);
+    font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:500;font-size:16px;color:var(--paper)}
+
+  /* ————— two signatures ————— */
+  .sig-pair{display:inline-flex;gap:64px;flex-wrap:wrap;justify-content:center;padding-top:32px;border-top:1px solid var(--line);margin-top:6px}
+  .sig2{display:flex;flex-direction:column;align-items:center;gap:4px}
+  .sig2 .nm{font-family:'Bebas Neue';font-size:28px;color:var(--ivory);letter-spacing:.08em}
+  .sig2 .rl{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:500;font-size:17.5px;color:var(--gold)}
+  .sig2 .ct{font-family:'Archivo';font-size:13px;color:var(--steel-2);margin-top:9px;font-weight:300;line-height:1.65}
+
+  @media (max-width:800px){
+    .cont{padding:24px 20px}
+    .ctab{font-size:13px}
+    .renders{grid-template-columns:1fr}
+    .sig-pair{gap:34px;flex-direction:column}
+    .ctab.map td:nth-child(3){display:none}
+  }
+</style>
+</head>
+<body>
+<div class="glow"></div>
+<div class="grain"></div>
+
+<!-- ═══ HERO ═══ -->
+<header class="hero">
+  <div class="hero-bg"></div>
+  <div class="wrap" style="width:100%">
+    <div class="topbar">
+      <a class="logo" href="https://limitlesslightsandsound.com" target="_blank" rel="noopener"><img src="img/limitless-logo.png" alt="Limitless Lights + Sound"></a>
+      <div class="forwhom">
+        prepared for
+        <b>Kathryn Fogo · IVMF</b>
+        <span>Veteran EDGE Conference 2027</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap" style="width:100%">
+    <div class="hero-mid">
+      <div class="hero-rule"></div>
+      <span class="eyebrow">Veteran EDGE Conference — Renaissance Dallas Hotel · March 8–13, 2027</span>
+      <h1>A tenth anniversary<br><em>that looks like one.</em></h1>
+      <p class="hero-lede">A custom Formset backdrop carrying the IVMF logo, a lighting rig that stands entirely on the floor so no hotel rigging is needed, two-camera IMAG with the whole program recorded, and breakout rooms ready for every session. Built to sit cleanly alongside ENCORE, with Brian Fisher on site as your project lead from load-in to strike.</p>
+    </div>
+  </div>
+
+  <div class="wrap" style="width:100%">
+    <div class="hero-foot">
+      <div class="hf"><div class="k">the venue</div><div class="v">Renaissance Dallas Hotel</div></div>
+      <div class="hf"><div class="k">program</div><div class="v">Wed Mar 10 – Fri Mar 12, 2027</div></div>
+      <div class="hf"><div class="k">our role</div><div class="v">Full AV production</div></div>
+      <div class="hf"><div class="k">reference</div><div class="v">Quotation № 1721</div></div>
+    </div>
+  </div>
+</header>
+
+<!-- ═══ POSITIONING ═══ -->
+<section id="positioning">
+  <div class="wrap">
+    <span class="eyebrow sec-eyebrow reveal">Why an outside vendor works here</span>
+    <p class="lead-statement reveal">Everything in this package is built to sit <b>cleanly alongside ENCORE.</b></p>
+
+    <div class="promise-row reveal">
+      <div class="promise-col">
+        <span class="kk">Working inside the hotel's arrangement</span>
+        <h3>We stay in our lane, on purpose</h3>
+        <p>Your hotel contract gives ENCORE exclusive rights to rigging, electrical, IT and sound patching, and we have built the whole package around that rather than against it. The General Session lighting stands on ground-supported truss towers with bolt bases and ballast, so there is no rigging call and no rigging bill. On our call we talked about hotel rigging alone running $10–15K. We bring our own PA, mixers and wireless, so nothing patches into the house system. Every Astera fixture runs on battery and never touches house power. The one thing we take from ENCORE is a power tie-in, which our own distro picks up from there.</p>
+      </div>
+      <div class="promise-col">
+        <span class="kk">One lead, there for all of it</span>
+        <h3>Brian is on site from Monday to Saturday</h3>
+        <p>Brian Fisher is your named project lead. He scoped this event with Kathryn on October 5 and he is on site from Monday's load-in through Saturday's strike. He brings our lead technicians from Austin and we hire local crew for stagehand roles, which keeps travel cost down without putting unfamiliar people on the systems that matter. You and the IVMF AV/IT team get one person who knows every room, every cue and every ENCORE handoff, instead of a different contact for each department.</p>
+      </div>
+    </div>
+
+    <div class="stats reveal">
+      <div class="stat"><div class="n">13</div><div class="l">years in business</div></div>
+      <div class="stat"><div class="n">$4.5M</div><div class="l">owned AV &amp; lighting</div></div>
+      <div class="stat"><div class="n">14</div><div class="l">full-time staff</div></div>
+      <div class="stat"><div class="n">300+</div><div class="l">vetted contractors</div></div>
+      <div class="stat"><div class="n">6</div><div class="l">days, one on-site lead</div></div>
+    </div>
+  </div>
+</section>
+<!-- RENDERS_SLOT -->
+
+<!-- ═══ §4.2 SCOPE ═══ -->
+<section id="scope">
+  <div class="wrap">
+    <span class="eyebrow sec-eyebrow reveal">RFP §4 · Scope of services, mapped to Section 2</span>
+    <h2 class="sec-title reveal">Room by room.</h2>
+    <p class="sec-intro reveal" style="margin-bottom:40px">The General Session room carries most of the production and is used twice, for the program and again for Friday's closing dinner. The breakout rooms are built to the same standard at a smaller scale.</p>
+
+    <div class="rooms">
+
+      <div class="room reveal">
+        <div class="room-inner">
+          <div class="room-head">
+            <div>
+              <div class="room-num">Salon D &amp; E · ~400–500</div>
+              <div class="room-label">Wednesday to Friday, including the Closing Dinner &amp; Awards</div>
+              <h3>General Session</h3>
+            </div>
+            <div class="room-price">
+              <div class="amt">$52,522.09</div>
+              <div class="cap">equipment &amp; crew</div>
+            </div>
+          </div>
+          <div class="spec">
+            <div class="spec-col">
+              <div class="h">Audio</div>
+              <ul>
+                <li>QSC K12.2 mains with RCF 8004-AS subwoofers</li>
+                <li>(4) more K12.2: two for stage fill, two as delays for the back of the room</li>
+                <li>Allen &amp; Heath SQ-5 with DX168 stagebox</li>
+                <li>Acrylic podium with dual Shure MX418 goosenecks</li>
+              </ul>
+            </div>
+            <div class="spec-col">
+              <div class="h">Wireless</div>
+              <ul>
+                <li>Shure ULXD 8-pack: (8) handheld SM58 and (8) bodypack with UL4 lavalier</li>
+                <li>Every speaker can go handheld or lav, and a five-person panel still leaves three spare channels</li>
+                <li>Rechargeable batteries and charging bays, directional antennas</li>
+              </ul>
+            </div>
+            <div class="spec-col">
+              <div class="h">Lighting</div>
+              <ul>
+                <li>12" box truss towers on 140 lb bolt bases, fully ground-supported</li>
+                <li>(8) Prolights ECL ProfileFS with 19°, 26° and 36° lens tubes for front light</li>
+                <li>(16) Astera AX5 battery wash, (8) Robe CycFX8</li>
+                <li>Custom gobo projection, GrandMA2 control</li>
+              </ul>
+            </div>
+            <div class="spec-col">
+              <div class="h">Video &amp; IMAG</div>
+              <ul>
+                <li>(2) 16' × 9' Franklin screens with dress</li>
+                <li>(2) Epson 13,000-lumen laser projectors on short-throw lenses</li>
+                <li>(2) Sony HXC-FB75 broadcast cameras: a Fujinon 20× for the wide, a 36× for the tight</li>
+                <li>Blackmagic ATEM HD8 ISO switcher recording every source</li>
+              </ul>
+            </div>
+            <div class="spec-col">
+              <div class="h">Scenic</div>
+              <ul>
+                <li>Custom Formset tile backdrop with the IVMF logo at center</li>
+                <li>(6) 14.5' × 19' IFR black drape panels</li>
+              </ul>
+            </div>
+            <div class="spec-col">
+              <div class="h">Comms &amp; power</div>
+              <ul>
+                <li>ClearCom FreeSpeak II 10-pack wireless intercom</li>
+                <li>Lex Pagoda 120V Socapex distro fed from the ENCORE tie-in</li>
+              </ul>
+            </div>
+          </div>
+          <div class="room-crew"><b>Why the backdrop matters —</b> the Formset wall gives the tenth anniversary its own look, separate from the Syracuse University brand, which is what we heard you wanted on the call. It reads well in the room and it reads well on camera, which matters because both cameras are pointed at it all day.</div>
+        </div>
+      </div>
+
+      <div class="room reveal">
+        <div class="room-inner">
+          <div class="room-head">
+            <div>
+              <div class="room-num">Salons A, C, F and H</div>
+              <div class="room-label">Concurrent sessions, with a dedicated breakout technician</div>
+              <h3>Breakout Rooms</h3>
+            </div>
+            <div class="room-price">
+              <div class="amt">$8,563.80</div>
+              <div class="cap">equipment &amp; crew</div>
+            </div>
+          </div>
+          <div class="spec">
+            <div class="spec-col">
+              <div class="h">Salons A &amp; C</div>
+              <ul>
+                <li>(2) QSC K10.2 on stands, Allen &amp; Heath ZED-10FX</li>
+                <li>Shure ULXD handheld and lavalier</li>
+                <li>10' × 6' Franklin screen, Epson 6,000-lumen short-throw laser projector</li>
+                <li>HDMI laptop hookup at the lectern</li>
+              </ul>
+            </div>
+            <div class="spec-col">
+              <div class="h">Salon F · the panel room</div>
+              <ul>
+                <li>Same screen and projector as A and C</li>
+                <li>Shure ULXD quad: (4) handheld and (4) lavalier for the panel session</li>
+                <li>Allen &amp; Heath CQ-12T digital mixer</li>
+              </ul>
+            </div>
+            <div class="spec-col">
+              <div class="h">Salon H</div>
+              <ul>
+                <li>(2) QSC K10.2, Allen &amp; Heath CQ-12T</li>
+                <li>Shure ULXD handheld and lavalier</li>
+              </ul>
+            </div>
+            <div class="spec-col">
+              <div class="h">Salon B · VIP</div>
+              <ul>
+                <li>(8) Astera AX5 battery uplights</li>
+                <li>Its own look for the Friday VIP space, no house power needed</li>
+              </ul>
+            </div>
+          </div>
+          <div class="room-crew"><b>Breakout tech —</b> sets up Tuesday with two stagehands, then covers the breakout rooms 8 AM to 5 PM on Thursday and Friday.</div>
+        </div>
+      </div>
+
+      <div class="room reveal">
+        <div class="room-inner">
+          <div class="room-head">
+            <div>
+              <div class="room-num">Foyer &amp; public spaces</div>
+              <div class="room-label">Registration displays and branded gobo projection</div>
+              <h3>Additional Items</h3>
+            </div>
+            <div class="room-price">
+              <div class="amt">$2,245.00</div>
+              <div class="cap">equipment</div>
+            </div>
+          </div>
+          <div class="spec">
+            <div class="spec-col">
+              <div class="h">Displays</div>
+              <ul>
+                <li>(4) Samsung 55" displays on 72" rolling stands</li>
+                <li>For registration, the foyer, or wherever schedules and sponsor loops need to live</li>
+              </ul>
+            </div>
+            <div class="spec-col">
+              <div class="h">Gobo projection</div>
+              <ul>
+                <li>(2) more gobo totems, each a Prolights ECL ProfileFS with a custom gobo</li>
+                <li>Three custom gobo positions in total, including the one in the General Session</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="reveal">
+    <table class="ctab map" style="margin-top:34px">
+      <caption>Your Section 2.2 scope, line by line</caption>
+      <thead><tr><th>RFP scope item</th><th>Status</th><th>How</th></tr></thead>
+      <tbody>
+        <tr><td><b>General Session / Plenary</b> — Salon D&amp;E</td><td><span class="bdg us">Included</span></td><td>Lighting, screens, handheld and lavalier wireless, two-camera IMAG and switching, as above.</td></tr>
+        <tr><td><b>Breakout rooms</b> — Salons A, C, F, H</td><td><span class="bdg us">Included</span></td><td>Projection, screen and laptop hookup in A, C and F. Wireless in every room, plus a four-mic panel kit in F.</td></tr>
+        <tr><td><b>Closing Dinner &amp; Awards</b> — Salon D&amp;E</td><td><span class="bdg us">Included</span></td><td>The General Session rig and crew carry straight through Friday, 6 to 9 PM.</td></tr>
+        <tr><td><b>Content playback</b> — all session rooms</td><td><span class="bdg us">Included</span></td><td>Playback laptops in the General Session, laptop hookup in each breakout.</td></tr>
+        <tr><td><b>Recording</b></td><td><span class="bdg us">Included</span></td><td>The ATEM HD8 ISO records the program and every camera to local drives.</td></tr>
+        <tr><td><b>Live streaming</b></td><td><span class="bdg enc">With ENCORE</span></td><td>Available. It needs a dedicated internet line, which is ENCORE's exclusive scope, so we would coordinate it with them.</td></tr>
+        <tr><td><b>On-site technical staff</b></td><td><span class="bdg us">Included</span></td><td>Load-in, rehearsal, show and load-out, led on site by Brian Fisher throughout.</td></tr>
+        <tr><td><b>Business Showcase &amp; Reception</b> — Landmark Ballroom</td><td><span class="bdg no">Not in this base</span></td><td>Ambient sound and basic lighting can be added if you want it covered.</td></tr>
+        <tr><td><b>Cash Bar Cocktail Reception</b> — Grand Ballroom Foyer</td><td><span class="bdg no">Not in this base</span></td><td>Ambient sound can be added. The foyer already has the four 55" displays.</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ §4.7 ENCORE COORDINATION ═══ -->
+<section id="encore">
+  <div class="wrap">
+    <span class="eyebrow sec-eyebrow reveal">RFP §4 · Insurance &amp; coordination plan</span>
+    <h2 class="sec-title reveal">Who does what, with ENCORE.</h2>
+    <p class="sec-intro reveal" style="margin-bottom:10px;max-width:74ch">Section 2 asks every outside vendor to flag what we deliver on our own and what falls to ENCORE. This is that list, area by area. The short version: we need ENCORE for power, for internet if you stream, and for the required house technician. We don't need them for anything else.</p>
+
+    <div class="reveal">
+    <table class="ctab map">
+      <thead><tr><th>Area</th><th>Who</th><th>How it works</th></tr></thead>
+      <tbody>
+        <tr><td><b>Rigging</b></td><td><span class="bdg no">Not needed</span></td><td>Every truss tower and fixture is ground-supported on bolt bases and ballast. Nothing hangs from the ceiling, so ENCORE never has to make a rigging call.</td></tr>
+        <tr><td><b>Electrical</b></td><td><span class="bdg enc">ENCORE, then us</span></td><td>ENCORE provides the power tie-in. Our Lex Pagoda Socapex distro picks it up on camlock and handles everything downstream. We send a power plot in advance so the drop lands where it's needed.</td></tr>
+        <tr><td><b>Sound</b></td><td><span class="bdg us">Limitless</span></td><td>Our own PA, mixers and wireless in every room. Nothing patches into the house sound system.</td></tr>
+        <tr><td><b>IT &amp; internet</b></td><td><span class="bdg enc">ENCORE</span></td><td>Only needed if you livestream. Recording is local to our switcher and needs no internet at all.</td></tr>
+        <tr><td><b>Specialty lighting</b></td><td><span class="bdg us">Limitless</span></td><td>All 24 Astera AX5s, in the General Session and Salon B, run on battery and never draw house power.</td></tr>
+        <tr><td><b>Cameras &amp; IMAG</b></td><td><span class="bdg us">Limitless</span></td><td>Our own Sony broadcast cameras, CCUs and switcher. Nothing from the house system.</td></tr>
+        <tr><td><b>Staging &amp; scenic</b></td><td><span class="bdg us">Limitless</span></td><td>The Formset backdrop and drape are ours to build and strike.</td></tr>
+        <tr><td><b>House technician</b></td><td><span class="bdg enc">ENCORE</span></td><td>Required on every install and strike day under the hotel's outside-vendor policy. Estimated in our pricing below.</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="cont reveal">
+      <div class="rt">being straight about the trade-off</div>
+      <h3>The 20% hotel discount</h3>
+      <p>Your RFP notes that the hotel's 20% discount on 2027 AV pricing only applies if ENCORE is the sole provider. That is a real number and we are not going to pretend it isn't. What sits on the other side of it is a lighting rig that needs <b>no hotel rigging at all</b>, a backdrop and a look built specifically for your tenth anniversary, and a lead who has been on this event since the first call. Brian will be the single point of contact for ENCORE on site, and we will advance every handoff with the Hotel Event Manager before load-in.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ §4.3 STAFFING ═══ -->
+<section id="staffing">
+  <div class="wrap">
+    <span class="eyebrow sec-eyebrow reveal">RFP §4 · Equipment &amp; staffing plan</span>
+    <h2 class="sec-title reveal">The crew, day by day.</h2>
+    <p class="sec-intro reveal" style="margin-bottom:10px;max-width:74ch">Lead technicians travel from Austin and stagehands are hired locally. Brian is on site for every day shown here.</p>
+
+    <div class="reveal">
+    <table class="ctab">
+      <caption>Load-in — Monday March 8 &amp; Tuesday March 9</caption>
+      <thead><tr><th>Call</th><th>Crew</th><th class="r">Qty</th></tr></thead>
+      <tbody>
+        <tr><td>Mon 3/8 · 9 AM–5 PM<br><span style="color:var(--mute)">General Session build</span></td><td>Crew Chief, Audio Engineer, Lighting Designer, Video Technician, Record Op, Camera Op ×2, Fabricator, Stagehand ×5</td><td class="r q">13</td></tr>
+        <tr><td>Tue 3/9 · 9 AM–1 PM<br><span style="color:var(--mute)">Run-throughs &amp; touch-ups</span></td><td>Crew Chief, Audio Engineer, Lighting Designer, Video Technician, Record Op, Camera Op ×2</td><td class="r q">8</td></tr>
+        <tr><td>Tue 3/9 · 9 AM–5 PM<br><span style="color:var(--mute)">Breakout room setup</span></td><td>Breakout Technician, Stagehand ×2</td><td class="r q">3</td></tr>
+      </tbody>
+    </table>
+
+    <table class="ctab">
+      <caption>Program — Wednesday March 10 to Friday March 12</caption>
+      <thead><tr><th>Call</th><th>Crew</th><th class="r">Qty</th></tr></thead>
+      <tbody>
+        <tr><td>Wed 3/10 · 4–9 PM<br><span style="color:var(--mute)">Kickoff &amp; opening General Session</span></td><td>Audio Engineer, Lighting Designer, Video Technician, Record Op, Camera Op ×2</td><td class="r q">6</td></tr>
+        <tr><td>Thu 3/11 · 8 AM–8 PM<br><span style="color:var(--mute)">Full day, General Session</span></td><td>Audio Engineer, Lighting Designer, Video Technician, Record Op, Camera Op ×2</td><td class="r q">6</td></tr>
+        <tr><td>Thu 3/11 · 8 AM–5 PM<br><span style="color:var(--mute)">Breakouts</span></td><td>Breakout Technician</td><td class="r q">1</td></tr>
+        <tr><td>Fri 3/12 · 8 AM–9 PM<br><span style="color:var(--mute)">General Session through the Closing Dinner</span></td><td>Audio Engineer, Lighting Designer, Video Technician, Record Op, Camera Op ×2</td><td class="r q">6</td></tr>
+        <tr><td>Fri 3/12 · 8 AM–5 PM<br><span style="color:var(--mute)">Breakouts</span></td><td>Breakout Technician</td><td class="r q">1</td></tr>
+      </tbody>
+    </table>
+
+    <table class="ctab">
+      <caption>Strike — Saturday March 13</caption>
+      <thead><tr><th>Call</th><th>Crew</th><th class="r">Qty</th></tr></thead>
+      <tbody>
+        <tr><td>Sat 3/13 · 8 AM–1 PM</td><td>Crew Chief, Audio Engineer, Lighting Designer, Video Technician, Record Op, Camera Op ×2, Fabricator, Breakout Technician, Stagehand ×7</td><td class="r q">16</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="cont reveal">
+      <div class="rt">overtime, stated up front</div>
+      <h3>No surprise lines afterward</h3>
+      <p>Thursday from 6 to 8 PM and Friday from 6 to 9 PM run past a standard day, and both are <b>already priced as overtime in this quote</b>. Strike is deliberately set for <b>Saturday morning</b> instead of straight after Friday's dinner, so it runs at straight time rather than past midnight. That one scheduling choice keeps a sixteen-person strike off the most expensive hours of the week.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SCHEDULE ═══ -->
+<section id="schedule">
+  <div class="wrap">
+    <span class="eyebrow sec-eyebrow reveal">The week</span>
+    <h2 class="sec-title reveal">From the shop to the dinner.</h2>
+    <p class="sec-intro reveal" style="margin-bottom:34px">Setup on Monday and Tuesday is as we discussed with Kathryn on October 5. We'll confirm ballroom access for Monday with the Hotel Event Manager, since the hotel's function agenda lists Tuesday for ballroom setup.</p>
+
+    <div class="timeline reveal">
+      <div class="tl-row"><div class="tl-when"><div class="date">Mar 5</div><div class="day">Friday</div></div>
+        <div class="tl-what"><h3>Shop prep in Austin</h3><p>Every system is pulled and bench-tested before it is packed.</p></div></div>
+      <div class="tl-row"><div class="tl-when"><div class="date">Mar 7</div><div class="day">Sunday</div></div>
+        <div class="tl-what"><h3>Delivery to the Renaissance</h3><p>Gear arrives and goes into storage in Salon G, ready for a Monday morning start.</p></div></div>
+      <div class="tl-row"><div class="tl-when"><div class="date">Mar 8–9</div><div class="day">Monday – Tuesday</div></div>
+        <div class="tl-what"><h3>Load-in, build and run-throughs<span class="star">✦</span></h3><p>The General Session goes up on Monday. Tuesday morning is run-throughs and touch-ups, and the breakout rooms are set the same day.</p></div></div>
+      <div class="tl-row"><div class="tl-when"><div class="date">Mar 10</div><div class="day">Wednesday</div></div>
+        <div class="tl-what"><h3>Opening night</h3><p>General Session crew on from 4 PM for the kickoff and the opening speakers.</p></div></div>
+      <div class="tl-row"><div class="tl-when"><div class="date">Mar 11</div><div class="day">Thursday</div></div>
+        <div class="tl-what"><h3>Full program day</h3><p>General Session from 8 AM to 8 PM, breakouts from 8 AM to 5 PM.</p></div></div>
+      <div class="tl-row"><div class="tl-when"><div class="date">Mar 12</div><div class="day">Friday</div></div>
+        <div class="tl-what"><h3>Final day and the Closing Dinner<span class="star">✦</span></h3><p>The program and breakouts run through the day, then the Closing Dinner and Awards from 6 to 9 PM in Salon D&amp;E.</p></div></div>
+      <div class="tl-row"><div class="tl-when"><div class="date">Mar 13</div><div class="day">Saturday</div></div>
+        <div class="tl-what"><h3>Strike</h3><p>8 AM to 1 PM, at straight time. The rooms are back to the hotel by early afternoon.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ §4.6 PRICING ═══ -->
+<section id="investment">
+  <div class="wrap">
+    <span class="eyebrow sec-eyebrow reveal" style="text-align:center;display:block">RFP §4 · Pricing, in the Section 5 format</span>
+    <div class="invest reveal" style="margin-top:18px">
+      <div class="inv-in">
+        <div class="inv-label">total investment</div>
+        <div class="inv-sub">every room, every day, crew, transport and travel · tax exempt</div>
+        <div class="inv-figure">$73,798<span>.39</span></div>
+        <div class="inv-figcap">the complete Veteran EDGE production, delivered, run and struck</div>
+
+        <div class="inv-lines">
+          <div class="inv-head">Itemized, per Section 5</div>
+          <div class="inv-line"><div class="lab">Equipment rental <small>audio, lighting, video, cameras, scenic and power across every room</small></div><div class="val">$35,985.64</div></div>
+          <div class="inv-line"><div class="lab">Consumables <small>custom gobos, tape, batteries</small></div><div class="val">$439.00</div></div>
+          <div class="inv-line"><div class="lab">Labor / staffing <small>load-in Monday through show Friday, evening overtime included</small></div><div class="val">$26,906.25</div></div>
+          <div class="inv-line"><div class="lab">Strike &amp; trucking <small>Saturday strike crew, transport both directions</small></div><div class="val">$5,337.50</div></div>
+          <div class="inv-line"><div class="lab">Travel &amp; expenses <small>crew hotel and per diem for the Austin team</small></div><div class="val">$5,130.00</div></div>
+          <div class="inv-line"><div class="lab">Limitless total</div><div class="val">$73,798.39</div></div>
+          <div class="inv-line tax"><div class="lab">Sales tax <small>exempt</small></div><div class="val">$0.00</div></div>
+
+          <div class="inv-head">Required by the hotel, billed by ENCORE</div>
+          <div class="inv-line"><div class="lab">ENCORE house technician, estimated <small>$145/hr starting rate · Mon 8 hrs, Tue 8 hrs, Sat 5 hrs · billed to your Master Account</small></div><div class="val">$3,045.00</div></div>
+          <div class="inv-line total"><div class="lab">Estimated total AV cost to IVMF</div><div class="val">$76,843.39</div></div>
+        </div>
+
+        <div class="saved">
+          <div class="et">Upgrade to 16' × 9' LED — $6,500 more.</div>
+          <p>Swap projection in the General Session for a <b>16' × 9' LED wall</b>. LED holds up far better than projection under stage lighting and on camera, and it doesn't wash out when the house lights come up for the dinner. With the upgrade, the Limitless total is <b>$80,298.39</b>.</p>
+        </div>
+
+        <div class="inv-note">Quotation № 1721 · order date 10-05-2026 · rental period 03-05-2027 to 03-15-2027 · the ENCORE technician estimate uses the hotel's published starting rate and our install and strike hours; overtime may apply at the hotel's discretion · travel and expenses assume Limitless books the crew hotel, and the hotel portion comes off if IVMF adds the crew to its master rooming list.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ §4.1 COMPANY ═══ -->
+<section id="company">
+  <div class="wrap">
+    <span class="eyebrow sec-eyebrow reveal">RFP §4 · Company overview</span>
+    <h2 class="sec-title reveal">Who you'd be working with.</h2>
+    <p class="sec-intro reveal" style="margin-bottom:38px;max-width:74ch">Limitless Lights + Sound is an Austin-based audio, lighting, video and staging production company. We started buying gear thirteen years ago and built the business ourselves, with no outside investment. Today that is fourteen full-time staff, a network of more than three hundred vetted contractors, and roughly $4.5M in AV and lighting inventory that we own outright. We are a production company, not a rental house. We design, advance, staff and run shows, and the systems behind our work are built around one idea: no detail gets lost between the first call and the truck.</p>
+
+    <div class="reqs reveal">
+      <div class="req">
+        <div class="rt">on-site project lead</div>
+        <h3>Brian Fisher</h3>
+        <p>Account manager for Veteran EDGE. Brian scoped this event with Kathryn on October 5 and is <b>on site from load-in through strike</b>, as the single point of contact for IVMF, the Hotel Event Manager and ENCORE.</p>
+      </div>
+      <div class="req">
+        <div class="rt">founder &amp; owner</div>
+        <h3>Dash Speer</h3>
+        <p>Founded Limitless thirteen years ago and still owns it. Dash is accountable for this event and is a direct line if anything ever needs escalating.</p>
+      </div>
+      <div class="req">
+        <div class="rt">lead technicians</div>
+        <h3>From our Austin team</h3>
+        <p>Audio engineer, lighting designer, video technician and camera crew travel from Austin. These are the people who know the gear, because it is ours and they run it every week.</p>
+      </div>
+      <div class="req">
+        <div class="rt">local crew</div>
+        <h3>Dallas stagehands</h3>
+        <p>Stagehand roles for load-in and strike are hired in Dallas. That keeps travel cost down, and our leads run every call.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ §3 QUALIFICATIONS ═══ -->
+<section id="qualifications">
+  <div class="wrap">
+    <span class="eyebrow sec-eyebrow reveal">RFP §3 · Vendor qualifications</span>
+    <h2 class="sec-title reveal">Against your checklist.</h2>
+    <p class="sec-intro reveal" style="margin-bottom:10px">Section 3, point by point.</p>
+
+    <div class="reveal">
+    <table class="ctab map">
+      <thead><tr><th>Requirement</th><th>Status</th><th>Detail</th></tr></thead>
+      <tbody>
+        <tr><td><b>10+ years of AV production experience</b></td><td><span class="bdg us">Met</span></td><td>Thirteen years in business.</td></tr>
+        <tr><td><b>Insurance &amp; indemnification</b></td><td><span class="bdg us">Met</span></td><td>Certificate of insurance on request, naming the Renaissance Dallas Hotel and IVMF as required. We will complete the hotel's outside-vendor approval well ahead of the event.</td></tr>
+        <tr><td><b>Plan for working within ENCORE</b></td><td><span class="bdg us">Met</span></td><td>See the coordination plan above.</td></tr>
+        <tr><td><b>Pre-event site visit</b></td><td><span class="bdg us">Met</span></td><td>Available for a technical walkthrough whenever it is useful to IVMF and the hotel.</td></tr>
+        <tr><td><b>Staffing &amp; backup equipment</b></td><td><span class="bdg us">Met</span></td><td>An eight-channel wireless pool for a five-person panel, two projectors and two cameras in the General Session, and owned inventory behind every system on this quote.</td></tr>
+        <tr><td><b>Named on-site lead, for the full event</b></td><td><span class="bdg us">Met</span></td><td>Brian Fisher, from load-in through strike, working with your IVMF AV/IT team.</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="cont reveal">
+      <div class="rt">RFP §4 · availability confirmation</div>
+      <h3>We're available for your dates</h3>
+      <p>Limitless Lights + Sound confirms availability for the <b>full Veteran EDGE window</b>: delivery Sunday, March 7, 2027, load-in Monday, March 8, program Wednesday, March 10 through Friday, March 12, and strike Saturday, March 13.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ GOOD TO KNOW ═══ -->
+<section id="terms">
+  <div class="wrap">
+    <span class="eyebrow sec-eyebrow reveal">Good to know</span>
+    <h2 class="sec-title reveal">Clear terms, no surprises.</h2>
+    <p class="sec-intro reveal" style="margin-bottom:38px">The essentials, before anything is booked.</p>
+    <div class="gtk reveal">
+      <div class="gtk-item">
+        <span class="lead">changes</span>
+        <h3>Priced before they happen</h3>
+        <p>We absorb on-site changes within the bounds of safety and equipment capacity. Anything that adds to the scope is quoted and approved before we do it, never billed after the event.</p>
+      </div>
+      <div class="gtk-item">
+        <span class="lead">condition</span>
+        <h3>Tested in, inspected out</h3>
+        <p>Every system is bench-tested in our Austin shop before it ships. Gear is inspected on return within a standard five-day window, back at the shop, never rushed on the loading dock.</p>
+      </div>
+      <div class="gtk-item">
+        <span class="lead">coverage</span>
+        <h3>Insurance &amp; additional insured</h3>
+        <p>A certificate of insurance with liability and inland-marine coverage, naming Limitless Lights and Sound LLC as additional insured and loss payee, is required for the rental period.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CLOSE ═══ -->
+<section class="close">
+  <div class="wrap">
+    <h2 class="reveal">Thank you for <em>including us.</em></h2>
+    <p class="reveal">Kathryn, we'd be proud to produce the tenth Veteran EDGE. If anything here needs reworking, whether it's the LED upgrade, the breakout layout or how we split the work with ENCORE, tell either of us and we'll turn it around quickly.</p>
+    <div class="sig-pair reveal">
+      <div class="sig2">
+        <div class="nm">Brian Fisher</div>
+        <div class="rl">on-site project lead</div>
+        <div class="ct">brian@limitlesslightsandsound.com<br>(737) 247-1131</div>
+      </div>
+      <div class="sig2">
+        <div class="nm">Dash Speer</div>
+        <div class="rl">founder &amp; owner</div>
+        <div class="ct">dash@limitlesslightsandsound.com<br>(281) 787-9069</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-in">
+      <span>Limitless Lights + Sound</span>
+      <span>prepared for IVMF · Veteran EDGE 2027 · № 1721</span>
+      <span>Austin · Houston · Dallas</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.1,rootMargin:'0px 0px -5% 0px'});
+  document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(Math.min(i,3)*65)+'ms';io.observe(el);});
+</script>
+</body>
+</html>
