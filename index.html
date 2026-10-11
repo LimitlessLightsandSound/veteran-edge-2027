@@ -304,6 +304,27 @@
     font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:500;font-size:17px;color:var(--paper)}
   .renders{margin-top:16px}
 
+
+  /* ————— ACCEPT / CTA ————— */
+  .accept{background:linear-gradient(150deg,var(--slate),var(--ink-2));border:1px solid rgba(216,180,106,.38);border-radius:22px;
+    padding:62px 54px 52px;position:relative;overflow:hidden;text-align:center}
+  .accept::after{content:'';position:absolute;top:-45%;left:50%;transform:translateX(-50%);width:95%;height:150%;
+    background:radial-gradient(closest-side,rgba(216,180,106,.17),transparent);pointer-events:none}
+  .accept-in{position:relative;z-index:1}
+  .accept-valid{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:500;font-size:19px;color:var(--paper);margin:14px 0 34px}
+  .accept-valid b{font-family:'Archivo';font-style:normal;font-weight:600;font-size:16px;color:var(--gold);letter-spacing:.01em}
+  .cta-btn{display:inline-flex;align-items:center;gap:14px;padding:21px 44px;border-radius:999px;background:var(--gold);color:#0b1220;
+    font-family:'Archivo';font-weight:600;font-size:18px;letter-spacing:.02em;text-decoration:none;
+    box-shadow:0 12px 44px rgba(216,180,106,.28);transition:transform .3s ease,box-shadow .3s ease,background .3s ease}
+  .cta-btn:hover{transform:translateY(-2px);background:#e3c47e;box-shadow:0 16px 54px rgba(216,180,106,.38)}
+  .cta-btn:focus-visible{outline:3px solid var(--ivory);outline-offset:4px}
+  .cta-btn .arr{font-size:20px;transition:transform .3s ease}
+  .cta-btn:hover .arr{transform:translateX(4px)}
+  .accept-sub{font-size:14.5px;color:var(--steel);margin-top:18px;line-height:1.6}
+  .accept-terms{margin-top:50px;padding-top:36px;border-top:1px solid var(--line-soft);text-align:left}
+  .accept-terms .inv-head{text-align:center;border-bottom:none;padding-top:0}
+  .ctab.cancel{max-width:560px;margin:30px auto 0}
+  @media (max-width:800px){ .accept{padding:44px 22px 36px} .cta-btn{padding:19px 30px;font-size:16.5px} }
   /* ————— two signatures ————— */
   .sig-pair{display:inline-flex;gap:64px;flex-wrap:wrap;justify-content:center;padding-top:32px;border-top:1px solid var(--line);margin-top:6px}
   .sig2{display:flex;flex-direction:column;align-items:center;gap:4px}
@@ -544,11 +565,11 @@
           <div class="room-head">
             <div>
               <div class="room-num">Foyer &amp; public spaces</div>
-              <div class="room-label">Registration displays and branded gobo projection</div>
+              <div class="room-label">Registration displays, gobo projection and cocktail-hour music</div>
               <h3>Additional Items</h3>
             </div>
             <div class="room-price">
-              <div class="amt">$2,245.00</div>
+              <div class="amt">$2,601.00</div>
               <div class="cap">equipment</div>
             </div>
           </div>
@@ -565,6 +586,13 @@
               <ul>
                 <li>(2) more gobo totems, each a Prolights ECL ProfileFS with a custom gobo</li>
                 <li>Three custom gobo positions in total, including the one in the General Session</li>
+              </ul>
+            </div>
+            <div class="spec-col">
+              <div class="h">Cocktail hour</div>
+              <ul>
+                <li>(2) QSC K10.2 on stands for background music</li>
+                <li>iPad playback through a Radial DI</li>
               </ul>
             </div>
           </div>
@@ -586,7 +614,7 @@
         <tr><td><b>Live streaming</b></td><td><span class="bdg enc">With ENCORE</span></td><td>Available. It needs a dedicated internet line, which is ENCORE's exclusive scope, so we would coordinate it with them.</td></tr>
         <tr><td><b>On-site technical staff</b></td><td><span class="bdg us">Included</span></td><td>Load-in, rehearsal, show and load-out, led on site by Brian Fisher throughout.</td></tr>
         <tr><td><b>Business Showcase &amp; Reception</b> — Landmark Ballroom</td><td><span class="bdg no">Not in this base</span></td><td>Ambient sound and basic lighting can be added if you want it covered.</td></tr>
-        <tr><td><b>Cash Bar Cocktail Reception</b> — Grand Ballroom Foyer</td><td><span class="bdg no">Not in this base</span></td><td>Ambient sound can be added. The foyer already has the four 55" displays.</td></tr>
+        <tr><td><b>Cash Bar Cocktail Reception</b> — Grand Ballroom Foyer</td><td><span class="bdg us">Included</span></td><td>Two QSC K10.2 with iPad playback for background music, alongside the four 55" displays.</td></tr>
       </tbody>
     </table>
     </div>
@@ -675,24 +703,24 @@
       <div class="inv-in">
         <div class="inv-label">total investment</div>
         <div class="inv-sub">every room, every day, crew, transport and travel · tax exempt</div>
-        <div class="inv-figure">$73,798<span>.39</span></div>
+        <div class="inv-figure">$74,154<span>.39</span></div>
         <div class="inv-figcap">the complete Veteran EDGE production, delivered, run and struck</div>
 
         <div class="inv-lines">
           <div class="inv-head">Itemized, per Section 5</div>
-          <div class="inv-line"><div class="lab">Equipment rental <small>audio, lighting, video, cameras, scenic and power across every room</small></div><div class="val">$35,985.64</div></div>
+          <div class="inv-line"><div class="lab">Equipment rental <small>audio, lighting, video, cameras, scenic and power across every room</small></div><div class="val">$36,341.64</div></div>
           <div class="inv-line"><div class="lab">Consumables <small>custom gobos, tape, batteries</small></div><div class="val">$439.00</div></div>
           <div class="inv-line"><div class="lab">Labor / staffing <small>load-in Monday through show Friday, evening overtime included</small></div><div class="val">$26,906.25</div></div>
           <div class="inv-line"><div class="lab">Strike &amp; trucking <small>Saturday strike crew, transport both directions</small></div><div class="val">$5,337.50</div></div>
           <div class="inv-line"><div class="lab">Travel &amp; expenses <small>crew hotel and per diem for the Austin team</small></div><div class="val">$5,130.00</div></div>
-          <div class="inv-line"><div class="lab">Subtotal</div><div class="val">$73,798.39</div></div>
+          <div class="inv-line"><div class="lab">Subtotal</div><div class="val">$74,154.39</div></div>
           <div class="inv-line tax"><div class="lab">Sales tax <small>exempt</small></div><div class="val">$0.00</div></div>
-          <div class="inv-line total"><div class="lab">Total</div><div class="val">$73,798.39</div></div>
+          <div class="inv-line total"><div class="lab">Total</div><div class="val">$74,154.39</div></div>
         </div>
 
         <div class="saved">
           <div class="et">Upgrade the General Session to 16' × 9' LED — $6,500 more.</div>
-          <p>Swap projection in the General Session for a <b>16' × 9' LED wall</b>. LED holds up far better than projection under stage lighting and on camera, and it doesn't wash out when the house lights come up for the dinner. With the upgrade, the Limitless total is <b>$80,298.39</b>.</p>
+          <p>Swap projection in the General Session for a <b>16' × 9' LED wall</b>. LED holds up far better than projection under stage lighting and on camera, and it doesn't wash out when the house lights come up for the dinner. With the upgrade, the Limitless total is <b>$80,654.39</b>.</p>
         </div>
 
         <div class="saved">
@@ -700,7 +728,7 @@
           <p>The hotel requires an ENCORE technician on install and strike days, billed by ENCORE straight to your Master Account. Bring us into that process and we'll work it through with you and the Hotel Event Manager, <b>matched to our actual load-in and strike times</b> so the hours line up with the work.</p>
         </div>
 
-        <div class="inv-note">Quotation № 1721 · order date 10-05-2026 · rental period 03-05-2027 to 03-15-2027 · travel and expenses assume Limitless books the crew hotel, and the hotel portion comes off if IVMF adds the crew to its master rooming list.</div>
+        <div class="inv-note">Quotation № 1721 · order date 10-05-2026 · rental period 03-05-2027 to 03-15-2027 · pricing valid until 11-30-2026 · travel and expenses assume Limitless books the crew hotel, and the hotel portion comes off if IVMF adds the crew to its master rooming list.</div>
       </div>
     </div>
   </div>
@@ -897,60 +925,47 @@
   </div>
 </section>
 
-<!-- ═══ §5 TERMS ═══ -->
-<section id="terms">
+<!-- ═══ ACCEPT ═══ -->
+<section id="accept">
   <div class="wrap">
-    <span class="eyebrow sec-eyebrow reveal">RFP §5 · Terms</span>
-    <h2 class="sec-title reveal">Payment, overtime and cancellation.</h2>
+    <div class="accept reveal">
+      <div class="accept-in">
+        <div class="inv-label">accept this proposal</div>
+        <div class="inv-figure">$74,154<span>.39</span></div>
+        <div class="accept-valid">Pricing valid until <b>November 30, 2026</b></div>
+        <a class="cta-btn" href="https://limitless.current-rms.com/view_document/000_acfc0f70-a7c0-013f-d707-128857096145/document_approval" target="_blank" rel="noopener">Approve the quote <span class="arr" aria-hidden="true">→</span></a>
+        <div class="accept-sub">Opens Quotation № 1721 for review and approval.<br>Adding the General Session LED upgrade? Tell Brian and we'll update the quote before you approve.</div>
 
-    <div class="gtk reveal" style="margin-top:30px">
-      <div class="gtk-item">
-        <span class="lead">payment</span>
-        <h3>50% deposit, balance before load-in</h3>
-        <p>A 50% deposit reserves the equipment, crew and dates, and the balance is due before the first scheduled load-in. Credit terms are available for approved clients, and when agreed they're stated on the invoice.</p>
-      </div>
-      <div class="gtk-item">
-        <span class="lead">overtime</span>
-        <h3>1.5× after 10 hours or after midnight</h3>
-        <p>A standard production day runs up to 10 hours. Time beyond that, or between midnight and 6 AM, is billed at 1.5× the base hourly rate. We don't bill double time unless it's quoted. The Thursday and Friday evening overtime on this job is already in the price.</p>
-      </div>
-      <div class="gtk-item">
-        <span class="lead">cancellation</span>
-        <h3>Scaled to how close it falls</h3>
-        <p>Cancellation is charged as a share of the total order, based on how close it falls to the first scheduled load-in or delivery, and your deposit is applied toward it. A postponement counts as a cancellation unless we agree in writing to move the date.</p>
-      </div>
-    </div>
-
-    <div class="reveal">
-    <table class="ctab" style="max-width:640px;margin-top:30px">
-      <caption>Cancellation schedule</caption>
-      <thead><tr><th>Notice before first load-in or delivery</th><th class="r">Share of total order</th></tr></thead>
-      <tbody>
-        <tr><td>More than 30 days</td><td class="r q">5%</td></tr>
-        <tr><td>15 to 30 days</td><td class="r q">25%</td></tr>
-        <tr><td>8 to 14 days</td><td class="r q">50%</td></tr>
-        <tr><td>3 to 7 days</td><td class="r q">75%</td></tr>
-        <tr><td>Within 72 hours</td><td class="r q">100%</td></tr>
-        <tr><td>After prep, delivery or load-in has begun</td><td class="r q">100%</td></tr>
-      </tbody>
-    </table>
-    </div>
-
-    <div class="gtk reveal" style="margin-top:38px">
-      <div class="gtk-item">
-        <span class="lead">changes</span>
-        <h3>Approved in writing or on site</h3>
-        <p>Changes to scope, schedule or equipment can be approved in writing beforehand or by your team on site. If a change adds cost, Brian flags it before the work is done.</p>
-      </div>
-      <div class="gtk-item">
-        <span class="lead">insurance</span>
-        <h3>Our coverage, and yours</h3>
-        <p>We carry commercial insurance for our operations and will provide a certificate naming the Renaissance Dallas Hotel and IVMF as the hotel requires. Please send any specific endorsements the hotel needs before signing. Event-specific coverage, such as event cancellation or liquor liability, stays with IVMF.</p>
-      </div>
-      <div class="gtk-item">
-        <span class="lead">the agreement</span>
-        <h3>One document governs</h3>
-        <p>These summarize our Production Services Agreement, which is what we'd both sign. As your RFP describes, final terms go into that agreement before the event.</p>
+        <div class="accept-terms" id="terms">
+          <div class="inv-head">Terms, per RFP §5</div>
+          <div class="gtk" style="margin-top:22px">
+            <div class="gtk-item">
+              <span class="lead">payment</span>
+              <h3>50% deposit, balance before load-in</h3>
+              <p>A 50% deposit reserves the equipment, crew and dates, and the balance is due before the first scheduled load-in. Credit terms are available for approved clients and are stated on the invoice.</p>
+            </div>
+            <div class="gtk-item">
+              <span class="lead">overtime</span>
+              <h3>1.5× after 10 hours or after midnight</h3>
+              <p>1.5× the base hourly rate after 10 hours in a day, or between midnight and 6 AM. No double time unless it's quoted. The Thursday and Friday evening overtime on this job is already included.</p>
+            </div>
+            <div class="gtk-item">
+              <span class="lead">cancellation</span>
+              <h3>Scaled to notice</h3>
+              <p>A share of the total order, based on notice before the first scheduled load-in or delivery. Your deposit is applied toward it.</p>
+            </div>
+          </div>
+          <table class="ctab cancel">
+            <thead><tr><th>Notice before first load-in or delivery</th><th class="r">Share of total order</th></tr></thead>
+            <tbody>
+              <tr><td>More than 30 days</td><td class="r q">5%</td></tr>
+              <tr><td>15 to 30 days</td><td class="r q">25%</td></tr>
+              <tr><td>8 to 14 days</td><td class="r q">50%</td></tr>
+              <tr><td>3 to 7 days</td><td class="r q">75%</td></tr>
+              <tr><td>Within 72 hours, or once work has begun</td><td class="r q">100%</td></tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </div>
